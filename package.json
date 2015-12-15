@@ -1,0 +1,11 @@
+{
+  "name": "ui-popover",
+  "description": "popover content web component",
+  "version": "1.0.0",
+  "author": "S. Francis",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EllipticalElements/ui-popover.git"
+  }
+}
