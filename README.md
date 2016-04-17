@@ -1,4 +1,4 @@
-UI-COMPONENT
+UI-POPOVER
 ===========================
 
-element for elliptical and polymer web components
+popover component for polymer web components

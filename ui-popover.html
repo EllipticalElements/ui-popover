@@ -1,19 +1,27 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../elliptical-polymer-behaviors/component-behavior.html">
 <link rel="import" href="../ui-behaviors/popover.html">
 
 
 <script>
-Elliptical(function(){
-    $.element.registerElement('pop-content');
 
-    $.element('ui-popover',[Elliptical.Behaviors.PopOver],{
-        options: {
-            proxyUpgrade:true,
-            dataWidth:null,
-            dataTop:null
+    Polymer({
+
+        is: 'ui-popover',
+
+        behaviors:[Elliptical.ComponentBehavior,Elliptical.Behaviors.PopOver],
+
+        properties: {
+            dataWidth:{
+                value:null
+            },
+            dataTop:{
+                value:null
+            }
 
         },
 
-        _initElement: function(){
+        ready:function(){
             var content = this.element.find('pop-content');
             this._data.set('content',content);
             if(this.dataWidth) this._assignWidth(this.dataWidth);
@@ -22,5 +30,5 @@ Elliptical(function(){
         }
 
     });
-});
+
 </script>
