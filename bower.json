@@ -1,7 +1,7 @@
 {
   "name": "ui-popover",
   "description": "popover content web component",
-  "version":"1.1.0",
+  "version":"1.2.0",
   "main": "ui-popover.html",
   "authors": [
     "S. Francis"
